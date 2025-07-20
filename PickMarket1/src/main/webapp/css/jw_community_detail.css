@@ -1,0 +1,590 @@
+/* Everytime style for board detail page */
+
+.page-main {
+  max-width: 800px;
+  margin: 80px auto;
+  padding: 40px 20px;
+  background-color: #fff;
+  border: 1px solid #eee;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.content-main {
+  padding: 20px;
+}
+
+.post-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.profile-img {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.profile-info .nickname {
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.profile-info .reg-date {
+  display: block;
+  font-size: 12px;
+  color: #888;
+  margin-top: 2px;
+}
+
+.post-title {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 14px 0;
+}
+
+.post-image {
+  margin: 10px 0;
+  text-align: center;
+}
+
+.post-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.post-content {
+  font-size: 15px;
+  line-height: 1.6;
+  white-space: pre-wrap;
+  margin: 16px 0;
+}
+
+.post-meta {
+  display: flex;
+  justify-content: flex-end;
+  gap: 16px;
+  font-size: 13px;
+  color: #666;
+  margin-top: 10px;
+}
+
+.align-center input[type="button"] {
+  background: none;
+  border: none;
+  font-size: 14px;
+  color: #555;
+  margin: 0 6px;
+  cursor: pointer;
+}
+
+.align-center input[type="button"]:hover {
+  text-decoration: underline;
+  color: #000;
+}
+
+/* 댓글 영역 */
+#reply_div {
+  margin-top: 40px;
+  padding: 20px;
+  border: 1px solid #eee;
+  border-radius: 8px;
+  background-color: #fafafa;
+}
+
+.re-title {
+  font-weight: bold;
+  font-size: 16px;
+  display: block;
+  margin-bottom: 12px;
+}
+
+.rep-content {
+  width: 100%;
+  padding: 10px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  resize: vertical;
+  box-sizing: border-box;
+}
+
+#re_first {
+  margin-top: 8px;
+  text-align: right;
+  font-size: 12px;
+  color: #888;
+}
+
+#re_second {
+  margin-top: 10px;
+  text-align: right;
+}
+
+.output {
+  margin-top: 20px;
+}
+
+.paging-button {
+  text-align: center;
+  margin-top: 10px;
+}
+
+/* Everytime style for board detail page + 개선 */
+
+.page-main {
+  max-width: 840px;
+  margin: 80px auto;
+  padding: 40px 20px;
+  background-color: #fff;
+  border: 1px solid #eee;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.content-main {
+  padding: 20px;
+}
+
+.post-header {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 20px;
+}
+
+.profile-img {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+}
+
+.profile-info .nickname {
+  font-weight: bold;
+  font-size: 17px;
+  display: block;
+}
+
+.profile-info .reg-date {
+  font-size: 13px;
+  color: #888;
+  margin-top: 2px;
+  display: block;
+}
+
+.post-title {
+  font-size: 20px;
+  font-weight: 700;
+  margin: 20px 0 14px 0;
+}
+
+.post-image {
+  margin: 10px 0 20px 0;
+  text-align: center;
+}
+
+.post-image img {
+  max-width: 400px;
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  object-fit: contain;
+}
+
+.post-content {
+  font-size: 16px;
+  line-height: 1.6;
+  white-space: pre-wrap;
+  margin: 20px 0;
+}
+
+.post-meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 14px;
+  color: #444;
+  margin-top: 10px;
+}
+
+.align-center {
+  margin: 20px 0;
+  text-align: right;
+}
+
+.align-center input[type="button"] {
+  background: #000;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 500;
+  padding: 8px 16px;
+  border-radius: 6px;
+  border: none;
+  margin-left: 8px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.align-center input[type="button"]:hover {
+  background-color: #333;
+}
+
+/* 댓글 영역 */
+#reply_div {
+  margin-top: 40px;
+  padding: 20px;
+  border: 1px solid #eee;
+  border-radius: 8px;
+  background-color: #fafafa;
+}
+
+.re-title {
+  font-weight: bold;
+  font-size: 16px;
+  display: block;
+  margin-bottom: 12px;
+}
+
+.rep-content {
+  width: 100%;
+  padding: 12px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  resize: vertical;
+  box-sizing: border-box;
+}
+
+#re_first {
+  margin-top: 8px;
+  text-align: right;
+  font-size: 12px;
+  color: #888;
+}
+
+#re_second {
+  margin-top: 10px;
+  text-align: right;
+}
+
+.output {
+  margin-top: 20px;
+}
+
+.paging-button {
+  text-align: center;
+  margin-top: 10px;
+}
+.post-content {
+  font-size: 18px;
+  line-height: 1.8;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  word-break: break-word;
+}
+.post-image {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.post-image img {
+  max-width: 300px;
+  height: auto;
+  border-radius: 10px;
+  object-fit: contain;
+}
+
+.post-title {
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 15px;
+  margin-top: 20px;
+}
+
+.post-content {
+  font-size: 16px;
+  color: #111;
+  line-height: 1.6;
+  white-space: normal;
+  word-break: break-word;
+  margin: 0;    
+  padding: 0;      
+  text-indent: 0;   
+}
+
+/*버튼 색 변경*/
+
+/* 공통 버튼 스타일 */
+.post-buttons input[type="button"] {
+  background-color: #ffe6eb;    
+  color: #111;                     
+  border: 1px solid #fcb4c6;      
+  padding: 10px 18px;
+  font-size: 15px;
+  font-weight: 600;
+  border-radius: 8px;
+  margin: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* 마우스 호버 시 */
+.post-buttons input[type="button"]:hover {
+  background-color: #fcb4c6;    
+  color: white;
+  border-color: #fc88a1;
+}
+
+/* 댓글등록 버튼 스타일 */
+
+#re_second input[type="submit"]  {
+  background-color: #ffe6eb;
+  color: #111;
+  border: 1px solid #fcb4c6;
+  padding: 8px 14px;
+  font-size: 14px;
+  font-weight: 600;
+  border-radius: 6px;
+  margin-top: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+#re_second input[type="submit"]:hover  {
+ background-color: #fcb4c6;
+  color: #fff;
+  border-color: #fc88a1;
+}
+
+
+.rep-content {
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  padding: 10px;
+  font-size: 14px;
+  resize: vertical;
+  width: 100%;
+  box-sizing: border-box;
+}
+.reply-item {
+  background-color: #fff;
+  border: 1px solid #fcdde5;
+  border-radius: 8px;
+  padding: 12px 16px;
+  margin-bottom: 14px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.04);
+}
+
+.reply-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 6px;
+}
+
+.reply-nickname {
+  font-weight: 600;
+  color: #333;
+  font-size: 14px;
+}
+
+.reply-date {
+  font-size: 12px;
+  color: #999;
+}
+
+.reply-content {
+  font-size: 15px;
+  color: #111;
+  line-height: 1.6;
+  white-space: pre-wrap;
+  word-break: break-word;
+  margin-bottom: 10px;
+}
+
+.reply-btns {
+  text-align: right;
+}
+
+.reply-btns input[type="button"] {
+  background-color: #ffe6eb;
+  color: #333;
+  border: 1px solid #fcb4c6;
+  border-radius: 5px;
+  font-size: 13px;
+  padding: 5px 10px;
+  margin-left: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.reply-btns input[type="button"]:hover {
+  background-color: #fcb4c6;
+  color: white;
+}
+.reply-btns {
+  display: flex;
+  justify-content: flex-end;
+  gap: 6px;
+  margin-top: 8px;
+}
+
+.reply-btns input[type="button"] {
+  background-color: #ffe6eb;
+  color: #333;
+  border: 1px solid #fcb4c6;
+  border-radius: 5px;
+  font-size: 13px;
+  padding: 5px 10px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.reply-btns input[type="button"]:hover {
+  background-color: #fcb4c6;
+  color: white;
+}
+.reply-item {
+  background-color: #fff;
+  padding: 12px 16px;
+  border-radius: 8px;
+  margin-bottom: 16px;
+  border: 1px solid #999 
+}
+
+.no-reply-msg {
+  text-align: center;
+  padding: 20px;
+  font-size: 16px;
+  color: #666;
+  font-weight: 500;
+  letter-spacing: -0.3px;
+}
+
+.post-meta {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 24px;
+  margin: 16px 0;
+  font-size: 15px;
+  color: #555;
+}
+
+.post-meta .hit,
+.post-meta .reply-count-text,
+.post-meta .likes {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.post-meta .likes img {
+  width: 22px;
+  height: 22px;
+  vertical-align: middle;
+}
+
+.reply-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 4px;
+}
+
+.reply-nickname {
+  font-weight: bold;
+  font-size: 15px;
+}
+
+.reply-date,
+.modify-date {
+  font-size: 13px;
+  color: #888;
+  margin-left: 8px;
+}
+.reply-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.reply-dates {
+  display: flex;
+  gap: 4px;
+  font-size: 13px;
+  color: #888;
+  align-items: center;
+}
+
+.reply-date,
+.modify-date {
+  white-space: nowrap;
+  line-height: 1;
+}
+
+.likes img {
+  width: 24px;
+  height: 24px;
+  vertical-align: middle;
+  cursor: pointer; 
+  transition: transform 0.2s ease, filter 0.2s ease;
+}
+
+.likes img:hover {
+  transform: scale(1.2);
+  filter: brightness(1.2); 
+}
+/*댓글 수정폼*/
+
+#mre_form {
+  background-color: #fff7f9; /* 연한 핑크 배경 */
+  border: 1px solid #f3cbd2;
+  border-radius: 12px;
+  padding: 14px 16px;
+  margin-top: 10px;
+}
+
+#mre_form textarea {
+  width: 100%;
+  border: 1px solid #f3cbd2;
+  border-radius: 6px;
+  padding: 10px;
+  font-size: 14px;
+  resize: vertical;
+  box-sizing: border-box;
+  background-color: #ffffff;
+  color: #333;
+}
+
+#mre_form .letter-count {
+  font-size: 12px;
+  color: #b88d96;
+  margin-top: 6px;
+  display: inline-block;
+}
+
+#mre_form .align-right {
+  text-align: right;
+  margin-top: 10px;
+}
+
+#mre_form input[type="submit"],
+#mre_form input[type="button"] {
+  background-color: #f4a8b4;  /* 연분홍색 */
+  border: none;
+  padding: 8px 14px;
+  border-radius: 6px;
+  font-size: 13px;
+  color: #fff;
+  margin-left: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#mre_form input[type="submit"]:hover,
+#mre_form input[type="button"]:hover {
+  background-color: #e38c9b; /* hover 시 진해짐 */
+}

@@ -1,0 +1,159 @@
+h2 {
+  font-size: 28px;
+  font-weight: bold;
+  color: #000;
+  text-align: center;
+  margin: 60px 0 40px 0;
+}
+
+/* ===== 컨테이너 ===== */
+.content-main {
+  max-width: 800px;
+  margin: 80px auto 120px auto; 
+  background-color: #fff;
+  border: 1px solid #eee;
+  border-radius: 12px;
+  padding: 60px 50px;       
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.03);
+}
+
+/* ===== 폼 ===== */
+form ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+form li {
+  margin-bottom: 28px;
+  display: flex;
+  align-items: center;
+}
+
+form label {
+  width: 80px;
+  font-weight: 600;
+  font-size: 16px;
+  color: #111;
+}
+
+form input[type="text"],
+form textarea,
+form input[type="file"] {
+  flex: 1;
+  padding: 12px 14px;
+  font-size: 15px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  transition: border-color 0.2s;
+}
+
+form input[type="text"]:focus,
+form textarea:focus {
+  border-color: #000;
+  outline: none;
+}
+
+.align-center {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.align-center input[type="submit"],
+.align-center input[type="button"] {
+  padding: 12px 28px;
+  font-size: 15px;
+  font-weight: 600;
+  background-color: #000;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  margin: 0 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.align-center input[type="submit"]:hover,
+.align-center input[type="button"]:hover {
+  background-color: #333;
+}
+
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+.page-main {
+  display: flex;
+  flex-direction: column;
+}
+
+
+form li {
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.align-center {
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+.image-preview-box {
+  position: relative;
+  width: 150px;
+}
+
+
+#preview-image {
+  width: 100%;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+.image-preview-wrap {
+  position: relative;
+  display: inline-block;
+  margin-left: 10px;
+  margin-top: 10px;
+}
+
+#preview-image {
+  width: 120px;
+  height: auto;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+.delete-image-btn {
+  position: absolute;
+  top: -8px;
+  right: -8px;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background-color: #000;
+  color: #fff;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+
+#delete-image-btn {
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  background-color: #000;
+  color: #fff;
+  border: none;
+  font-size: 14px;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  cursor: pointer;
+}

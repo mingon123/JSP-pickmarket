@@ -1,0 +1,47 @@
+@charset "UTF-8";
+/*프로필 사진 원형으로*/
+.my-photo {
+    object-fit: cover;
+    object-position: top;
+    border-radius: 50%;
+}
+
+/*메인 배너영역 이미지 조정*/
+#main-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+#main-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+
+/*최신 등록 상품 영역*/
+.image-wrapper img {
+	width: 440px;
+	height: 290px;
+	object-fit: contain;
+}
+.image-wrapper .error-text {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	display: none;
+	justify-content: center;
+	align-items: center;
+	background-color: rgba(0, 0, 0, 0.5);
+	color: white;
+	font-size: 16px;
+	text-align: center;
+	z-index: 2; /*에러텍스트 맨위에 오도록 순서 지정*/
+	pointer-events: none; /*마우스 이벤트 무시하여 뒤 버튼 클릭 가능하게 함 */
+}
+

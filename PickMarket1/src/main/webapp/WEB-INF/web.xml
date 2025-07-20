@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="https://jakarta.ee/xml/ns/jakartaee" xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_6_0.xsd" id="WebApp_ID" version="6.0">
+  <display-name>PickMarket</display-name>
+  <servlet>
+    <servlet-name>DispatcherServlet</servlet-name>
+    <servlet-class>kr.controller.DispatcherServlet</servlet-class>
+    <init-param>
+      <param-name>propertiesPath</param-name>
+      <param-value>/WEB-INF/he.properties,/WEB-INF/il.properties,/WEB-INF/jw.properties,/WEB-INF/mg.properties</param-value>
+    </init-param>
+    <init-param>
+      <param-name>viewPath</param-name>
+      <param-value>/WEB-INF/views/</param-value>
+    </init-param>
+    <multipart-config>
+      <max-file-size>5242880</max-file-size>
+      <max-request-size>52428800</max-request-size>
+    </multipart-config>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>DispatcherServlet</servlet-name>
+    <url-pattern>*.do</url-pattern>
+  </servlet-mapping>
+    <!-- 기타 설정들 -->
+  <env-entry>
+    <env-entry-name>KAKAO_API_KEY</env-entry-name>
+    <env-entry-type>java.lang.String</env-entry-type>
+    <env-entry-value>9c2f709ee5e7bf4f54b747c040e87966</env-entry-value>
+  </env-entry>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+  </welcome-file-list>
+</web-app>

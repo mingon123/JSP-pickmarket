@@ -1,0 +1,608 @@
+/* 전체 폼 정렬 */
+.styled-search-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  margin: 40px 0;
+}
+
+.search-box .keyfield:focus {
+  outline: none;
+}
+
+/* 입력창 */
+.search-box input[type="search"] {
+  border: none;
+  flex: 1;
+  padding: 4px 6px;
+  font-size: 14px;
+  outline: none;
+}
+
+/* 검색 버튼 */
+.search-btn {
+  background: #222;
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  margin-left: 8px;
+}
+
+.search-btn i {
+  font-size: 14px;
+}
+
+/* 초기화 버튼 */
+.reset-btn {
+  background: transparent;
+  border: 1px solid #ccc;
+  padding: 8px 12px;
+  border-radius: 8px;
+  font-size: 14px;
+  color: #333;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.reset-btn:hover {
+  background: #f9f9f9;
+}
+
+/* 전체 검색 폼 박스 스타일 */
+.search-box {
+  display: flex;
+  align-items: center;
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 9999px;
+  padding: 6px 12px;
+  width: 100%;
+  height: 55px;
+  max-width: 500px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+
+/* 검색어 입력창 */
+.search-box input[type="search"] {
+  flex: 1;
+  border: none;
+  padding: 6px 10px;
+  font-size: 14px;
+  outline: none;
+  background: transparent;
+  color: #333;
+}
+
+/* 검색 아이콘 버튼 */
+.search-box .search-button {
+  background: #111;
+  color: white;
+  border-radius: 50%;
+  width: 34px;
+  height: 34px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  margin-left: 8px;
+  cursor: pointer;
+}
+
+/* 초기화 버튼 */
+.search-box .reset-button {
+  margin-left: 12px;
+  padding: 6px 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background: #fff;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+select.keyfield:focus {
+  border: none;
+  border-right: 1px solid #eee !important;
+  outline: none;
+  box-shadow: none;
+  border-color: #888;
+}
+
+select.keyfield {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+
+  font-size: 16px;
+  font-weight: 500;
+  color: #333;
+
+  background: #fff url("data:image/svg+xml;utf8,<svg fill='gray' height='18' viewBox='0 0 24 24' width='18' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/></svg>") no-repeat right 12px center;
+  background-size: 16px 16px;
+
+  padding: 8px 38px 15px 16px; 
+  border: none;
+  border-right: 1px solid #eee;
+  border-radius: 12px 0 0 12px;
+
+  height: 45px;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+
+/* 최근 검색어 박스 (자동완성 박스처럼 뜨게) */
+.recent-box {
+  position: absolute;
+  top: calc(100% + 4px);  
+  left: 0;
+  width: 100%;
+  background: #fff;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+  z-index: 99;
+  padding: 8px 0;
+  max-height: 250px;
+  overflow-y: auto;
+  box-sizing: border-box;
+}
+
+/* 검색어 리스트 */
+.keyword-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.keyword-list li:hover {
+  background-color: #f5f5f5;
+}
+
+.search-box {
+  position: relative;
+}
+.recent-box {
+  border-radius: 12px;
+  border: 1px solid #eee;
+  box-shadow: 0 6px 12px rgba(0,0,0,0.04);
+}
+
+.keyword-list li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 15px;
+  font-size: 17px;
+  border-bottom: 1px solid #f5f5f5;
+}
+
+/* 삭제 버튼 */
+.keyword-list li .delete-keyword {
+  font-size: 16px;
+  background: none;
+  border: none;
+  color: #aaa;
+  cursor: pointer;
+}
+
+.recent-box {
+  position: absolute;
+  top: 54px; /* 바로 아래에 붙도록 */
+  left: 122px;
+  width: calc(100% - 165px); 
+  background: #fff;
+  border: 1px solid #eee;
+  border-radius: 3px;
+  box-shadow: 0 6px 12px rgba(0,0,0,0.06);
+  z-index: 20;
+  padding: 0; 
+  margin: 0; 
+}
+
+/* 최근 검색어 돋보기 아이콘 */
+.recent-icon {
+  margin-right: 8px;
+  font-size: 14px;
+  color: #000;
+}
+
+/* 위치 선택 버튼 스타일 */
+.location-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 10px 20px;
+  background-color: #111;
+  color: #fff;
+  border: none;
+  border-radius: 9999px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.location-btn:hover {
+  background-color: #333;
+}
+
+.location-btn i {
+  font-size: 14px;
+}
+
+#selected-location {
+  font-weight: 600;
+  font-size: 15px;
+}
+
+
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.close-modal {
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.search-area {
+  width: 100%;
+  padding: 10px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+
+.recommend-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.recommend-list li {
+  padding: 6px 0;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.recommend-list li:hover {
+  text-decoration: underline;
+}
+
+
+/* 검색어 리스트 전체 */
+.keyword-list li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; 
+  padding: 8px 16px;
+  font-size: 14px;
+  border-bottom: 1px solid #f1f1f1;
+}
+
+/* 검색어 텍스트 (왼쪽 정렬) */
+.keyword-list li .word {
+  flex: 1;
+  text-align: left; 
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  margin-left: 8px;
+  color: #333;
+  font-size: 14px;
+}
+
+.keyword-list li i.recent-icon {
+  font-size: 14px;
+  color: #000;
+  margin-right: 6px;
+}
+
+/* 부모 컨테이너: 위치 + 검색창 */
+.search-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  margin-top: 40px;
+  flex-wrap: wrap;
+}
+
+/* 지역 선택 버튼 */
+.location-btn {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  background-color: #111;
+  color: #fff;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 9999px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  height: 55px;
+  white-space: nowrap;
+}
+
+/* 모달 전체 중앙정렬 + 초기 숨김 */
+.location-modal {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0; left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0,0,0,0.4); 
+  z-index: 999;
+}
+
+
+/* 모달 콘텐츠 박스 */
+.modal-content {
+  background: white;
+  border-radius: 12px;
+  padding: 24px;
+  max-width: 520px;
+  width: 90%;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* 검색창 input */
+#search-area {
+  display: block;
+  margin: 0 auto 16px auto;
+  width: 100%;
+  max-width: 400px;
+  padding: 10px 14px;
+  font-size: 15px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-sizing: border-box;
+}
+
+/* 위치 버튼 */
+.current-location-btn {
+  display: block;
+  margin: 0 auto 20px auto;
+  background-color: #fff0f0;
+  color: #d60000;
+  border: none;
+  font-size: 14px;
+  padding: 10px 14px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+/* 추천 목록 */
+#recommend-wrapper {
+  max-height: 300px;
+  overflow-y: auto;
+  margin-top: 10px;
+}
+
+.recommend-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.recommend-list li {
+  padding: 10px 14px;
+  border-bottom: 1px solid #eee;
+  cursor: pointer;
+}
+
+.recommend-list li:hover {
+  background-color: #f9f9f9;
+}
+.location-btn i {
+  font-size: 14px;
+}
+
+/**/
+
+.modal-content {
+  background: white;
+  border-radius: 12px;
+  padding: 24px;
+  max-width: 520px;
+  width: 90%;
+  max-height: 90vh;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+.suggestion-container {
+  max-height: 350px;
+  overflow-y: auto;
+  padding-right: 4px; 
+}
+
+#recommend-wrapper {
+  max-height: none; 
+  overflow: visible;
+}
+
+.location-modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: 9999;
+}
+
+.location-modal .modal-content {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 600px;
+  height: 600px; /* ✅ 고정 높이 */
+  background-color: white;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.close-modal {
+  cursor: pointer;
+  font-size: 24px;
+}
+
+.search-area {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  margin-bottom: 10px;
+}
+
+.current-location-btn {
+  width: 100%;
+  background-color: #fff0ec;
+  color: #d34b28;
+  border: none;
+  padding: 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-bottom: 15px;
+}
+
+.suggestion-container {
+  flex: 1;
+  overflow-y: auto;
+}
+
+#recommend-wrapper {
+  width: 100%;
+}
+
+.recommend-title {
+  font-size: 13px;
+  color: #0095f6;
+  margin-bottom: 5px;
+  padding-left: 10px;
+}
+
+.recommend-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.recommend-list li {
+  padding: 10px;
+  border-bottom: 1px solid #eee;
+  cursor: pointer;
+  color: black;
+  font-size: 14px;
+}
+
+.recommend-list li:hover {
+  background-color: #f0f0f0;
+}
+
+#autocomplete-suggestions {
+  width: 100%;
+  background-color: white;
+}
+
+.autocomplete-suggestion {
+  padding: 10px;
+  cursor: pointer;
+  font-size: 14px;
+  border-bottom: 1px solid #eee;
+}
+
+.autocomplete-suggestion:hover {
+  background-color: #f0f0f0;
+}
+
+#page-title {
+  font-weight: 700;
+  color: #111;
+  text-align: center;
+  margin: 40px 0 24px;
+  position: relative;
+}
+
+#page-title::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 2px;
+  background-color: #000;
+  margin: 12px auto 0;
+}
+
+#product-regionName {
+  color: #444;
+  font-weight: 400;
+  line-height: 1.6;
+}
+
+#product-regionName strong {
+  color: #111;
+  font-weight: 600;
+}
+
+.filter-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end; 
+  margin: 10px 20px 20px;
+}
+
+.filter-sale label {
+  font-size: 15px;
+  color: #333;
+  margin-left: auto; 
+  display: inline-block;
+  position: relative;
+  top: 5px; 
+}
+
+.filter-sale input[type="checkbox"] {
+  transform: scale(1.1);
+  margin-right: 6px;
+  vertical-align: middle;
+}
+
+.filter-label-text {
+  position: relative;
+  top: 4px;
+}

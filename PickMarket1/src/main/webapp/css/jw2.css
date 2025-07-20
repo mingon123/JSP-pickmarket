@@ -1,0 +1,189 @@
+
+/* ===== 비밀번호 찾기 페이지 ===== */
+#pw-main {
+  margin-top: 150px;
+  margin-bottom: 100px;
+}
+
+#pw-title {
+  font-size: 28px;
+  font-weight: bold;
+  color: #111;
+  text-align: center;
+  margin-bottom: 60px;
+  border-bottom: 2px solid #000;
+  padding-bottom: 5px;
+  letter-spacing: 1px;
+}
+
+#pw-form {
+  width: 420px;
+  margin: 0 auto;
+  padding: 40px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+}
+
+#pw-form ul {
+  padding: 0;
+  list-style: none;
+}
+
+#pw-form li {
+  margin-bottom: 24px;
+}
+
+#pw-form label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+#pw-form .form-input {
+  width: calc(100% - 120px);
+  padding: 10px 12px;
+  font-size: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  display: inline-block;
+}
+
+#pw-form input[type="button"] {
+  padding: 10px 14px;
+  margin-left: 6px;
+  background-color: #000;
+  color: #fff;
+  border: none;
+  font-size: 14px;
+  font-weight: bold;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#pw-form input[type="button"]:hover {
+  background-color: #333;
+}
+
+#pw-form .form-notice {
+  font-size: 14px;
+  color: #444;
+  margin-top: 8px;
+}
+
+.pw-result-area {
+  background-color: #f8f8f8;
+  padding: 14px;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+#pw-auth-timer {
+  color: #e53935;
+  font-weight: bold;
+}
+
+#pw-auth-result {
+  font-weight: bold;
+}
+
+.pw-login-link {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 14px;
+}
+
+.pw-login-link a {
+  color: #000;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.pw-login-link a:hover {
+  color: #555;
+}
+
+#form-notice{
+	text-align: center;
+}
+
+#id_notice_div{
+	text-align: center;
+}
+
+
+/* 채팅 리스트 */
+.chat-room-list {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.chat-room-item {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    border-bottom: 1px solid #ddd;
+    text-decoration: none;
+    color: inherit;
+}
+
+.chat-thumbnail {
+    width: 80px;
+    height: 80px;
+    flex-shrink: 0;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.chat-info {
+    margin-left: 15px;
+    flex-grow: 1;
+}
+
+.chat-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.chat-name {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.chat-time {
+    font-size: 12px;
+    color: #999;
+}
+
+.chat-message {
+    font-size: 14px;
+    color: #555;
+    margin-top: 5px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.unread-badge {
+    background: red;
+    color: white;
+    font-size: 10px;
+    padding: 2px 6px;
+    border-radius: 9999px;
+    margin-left: 5px;
+}
+
+.no-chat-room {
+    text-align: center;
+    margin-top: 50px;
+    font-size: 16px;
+    color: #777;
+}
+.chat-room-list {
+    padding-top: 80px;   /* header 높이만큼 */
+    padding-bottom: 100px; /* footer 높이만큼 */
+    min-height: 100%;
+    box-sizing: border-box;
+}

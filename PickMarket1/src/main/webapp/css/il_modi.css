@@ -1,0 +1,16 @@
+@charset "UTF-8";
+/*footer 조정*/
+body{
+	width: auto;
+	background: white;
+}
+.page-main{
+	width: 1000px;
+	margin: 40px auto;
+	padding: 0px;
+}
+.content-main{
+	margin-top: 150px; /* 헤더 높이보다 약간 크게 */
+	padding: 60px 80px;
+}
+	

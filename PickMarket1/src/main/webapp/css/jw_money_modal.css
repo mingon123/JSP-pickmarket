@@ -1,0 +1,245 @@
+#paymentModal .payment-header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+#paymentModal .profile-img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+}
+
+#paymentModal .receiver-name {
+  font-size: 18px;
+  font-weight: 600;
+  margin-top: 10px;
+}
+
+#paymentModal .pay-amount {
+  font-size: 28px;
+  font-weight: bold;
+  color: #333;
+  margin-top: 6px;
+}
+
+.pay-shortcuts {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin-bottom: 20px;
+}
+
+.amount-add-btn {
+  padding: 6px 10px;
+  background: #f5f5f5;
+  border: none;
+  border-radius: 20px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+/* 금액 표시 */
+.pay-amount {
+  font-size: 22px;
+  font-weight: bold;
+  margin: 10px 0 20px;
+  color: #000;
+}
+
+/* ===== 키패드 버튼 스타일 (카톡 느낌) ===== */
+.pay-keypad {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 14px;
+  justify-items: center;
+  margin: 20px 0;
+}
+
+.key {
+  background: none;
+  border: none;
+  font-size: 22px;
+  font-weight: 600;
+  color: #222;
+  padding: 12px;
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
+.key:hover {
+  color: #000;
+}
+.key:active {
+  transform: scale(1.05);
+}
+
+/* ===== 상단 +금액 버튼 ===== */
+.pay-shortcut-group {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+.pay-shortcut-group button {
+  padding: 6px 16px;
+  background-color: #f5f5f5;
+  color: #333;
+  border: none;
+  border-radius: 20px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+.pay-shortcut-group button:hover {
+  background-color: #eaeaea;
+}
+
+/* ===== 금액 표시 ===== */
+.pay-amount {
+  font-size: 24px;
+  font-weight: bold;
+  margin: 10px 0 20px;
+  color: #000;
+}
+
+/* ===== 확인 버튼 (송금하기) ===== */
+.pay-confirm-btn {
+  margin-top: 10px;
+}
+.pay-confirm-btn button {
+  width: 100%;
+  padding: 14px 0;
+  background-color: #ffde00;
+  color: #000;
+  font-weight: bold;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+.pay-confirm-btn button:hover {
+  background-color: #f2cd00;
+}
+
+.pay-keypad .key {
+  all: unset; /* 기존 스타일 초기화 */
+  font-size: 22px;
+  font-weight: 600;
+  color: #222;
+  text-align: center;
+  padding: 12px 0;
+  width: 70px;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: background-color 0.2s ease;
+}
+.pay-keypad .key:hover {
+  background-color: #f3f3f3;
+}
+.pay-keypad .key:active {
+  background-color: #e0e0e0;
+  transform: scale(1.05);
+}
+
+/* 연한 상단 +금액 버튼 */
+.pay-shortcut-group button {
+  background-color: #f7f7f7;
+  color: #444;
+  border: 1px solid #ddd;
+}
+.pay-shortcut-group button:hover {
+  background-color: #efefef;
+}
+
+/*테스트*/
+
+/* 송금 메시지 전용 말풍선 */
+.chat-bubble.payment-message {
+  background-color: #f0f4ff; /* 은은한 네이비톤 배경 */
+  color: #003366; /* 신뢰감 있는 다크 블루 */
+  border: 1px solid #ccd9ff;
+  font-weight: 500;
+  box-shadow: 0 2px 8px rgba(0, 51, 102, 0.05);
+  border-radius: 16px;
+  padding: 12px 16px;
+}
+
+/* 내 채팅 - 송금 */
+.from-position .chat-bubble.payment-message {
+  background-color: #e6f0ff;
+  border-bottom-right-radius: 0;
+}
+
+/* 상대 채팅 - 송금 */
+.to-position .chat-bubble.payment-message {
+  background-color: #e9f6ff;
+  border-bottom-left-radius: 0;
+}
+
+/* 송금 메시지 안의 버튼 */
+.chat-bubble.payment-message button {
+  margin-left: 10px;
+  padding: 5px 10px;
+  background: #003366;
+  border: none;
+  color: #fff;
+  font-size: 13px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.chat-bubble.payment-message button:hover {
+  background-color: #002244;
+}
+
+.chat-bubble.payment-message button.disabled {
+  background-color: #ccc;
+  color: #666;
+  border-color: #aaa;
+  cursor: not-allowed;
+}
+
+.receive-payment-btn[disabled] {
+  background-color: #ccc;
+  color: #666;
+  border: 1px solid #aaa;
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+#openPaymentSendBtn.disabled {
+  background-color: #ccc;
+  color: #666;
+  cursor: not-allowed;
+  border: 1px solid #aaa;
+  opacity: 0.6;
+}
+
+.payment-info-note {
+  font-size: 13px;
+  color: #666;
+  margin-top: 8px;
+  text-align: center;
+}
+
+/* 거래 완료 버튼 (비활성화 전용) */
+#paymentDoneBtn {
+  background-color: #e0e0e0;
+  color: #999;
+  border: 1px solid #ccc;
+  font-weight: bold;
+  padding: 10px 16px;
+  font-size: 15px;
+  border-radius: 6px;
+  cursor: not-allowed;
+  opacity: 0.8;
+  transition: all 0.3s ease;
+}
+
+#paymentDoneBtn:hover {
+  /* hover 해도 아무 효과 없도록 */
+  background-color: #e0e0e0;
+  color: #999;
+}
+

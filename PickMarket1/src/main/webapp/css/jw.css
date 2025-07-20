@@ -1,0 +1,453 @@
+/* 공통 등록, 수정 폼 -------------------------*/
+
+/* ===== 공통 스타일 ===== */
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+input, select, textarea {
+  margin-top: 4px;
+  font-family: inherit;
+}
+
+/* ===== 회원가입 전용 ===== */
+#signup-main {
+  margin-top: 150px;
+}
+
+#signup-title {
+  font-size: 28px;
+  font-weight: bold;
+  color: #111;
+  text-align: center;
+  margin-bottom: 15px;
+  border-bottom: 2px solid #000;
+  padding-bottom: 5px;
+  letter-spacing: 1px;
+}
+
+#register_form {
+  width: 620px;
+  margin: 10px auto 0 auto !important;
+  background: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+  padding: 30px;
+  border: 1px solid #ddd;
+}
+
+#register_form ul li {
+  margin-bottom: 20px;
+}
+
+#register_form ul li label {
+  width: 130px;
+  display: inline-block;
+  font-weight: 600;
+  color: #222;
+}
+
+.input-check,
+#register_form input[type="email"],
+#register_form input[type="password"],
+#register_form input[type="text"],
+#register_form input[type="number"],
+#register_form textarea {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 15px;
+  transition: border-color 0.3s ease;
+}
+
+.input-check:focus {
+  border-color: #000;
+  outline: none;
+}
+
+input[type="button"],
+input[type="submit"] {
+  background-color: #000;
+  color: #fff;
+  border: none;
+  padding: 12px 20px;
+  font-size: 15px;
+  font-weight: bold;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+input[type="button"]:hover,
+input[type="submit"]:hover {
+  background-color: #111;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+  transform: translateY(-1px);
+}
+
+input[type="button"]:disabled,
+input[type="submit"]:disabled {
+  background-color: #ccc;
+  color: #666;
+  cursor: not-allowed;
+  box-shadow: none !important;
+  transform: none !important;
+}
+
+input[type="button"]:disabled:hover,
+input[type="submit"]:disabled:hover {
+  background-color: #ccc;
+  color: #666;
+  box-shadow: none;
+  transform: none;
+}
+
+.inline-input-group {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.inline-input-group input[type="email"],
+.inline-input-group input[type="text"] {
+  flex: 1;
+  min-width: 200px;
+}
+
+.inline-input-group input[type="button"] {
+  white-space: nowrap;
+  padding: 10px 16px;
+}
+
+.auth-area {
+  display: none;
+}
+
+.auth-input-group {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.auth-input-group input[type="text"] {
+  flex: 1;
+  min-width: 200px;
+}
+
+/* ===== 로그인 링크 ===== */
+.login-link {
+  text-align: center;
+  margin-top: 30px;
+  font-size: 14px;
+  color: #444;
+}
+
+.login-link a {
+  color: #000;
+  font-weight: bold;
+  text-decoration: underline;
+  transition: color 0.3s ease;
+}
+
+.login-link a:hover {
+  color: #555;
+}
+
+/* ===== 알림 ===== */
+#id_notice,
+#auth_result,
+#auth_timer {
+  font-size: 14px;
+  text-align: center;
+  display: block;
+}
+
+.align-center {
+  text-align: center;
+  margin-top: 30px;
+}
+
+
+#signup-photo-main {
+    margin-top: 150px;
+  }
+#signup-photo-title {
+    font-size: 28px;
+    font-weight: bold;
+    color: #111;
+    text-align: center;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #000;
+    padding-bottom: 5px;
+    letter-spacing: 1px;
+  }
+#signup-photo-sub {
+    text-align: center;
+    font-size: 18px;
+    margin-bottom: 30px;
+    color: #555;
+  }
+#register_photo_form {
+    width: 620px;
+    margin: 0 auto;
+    background: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.05);
+    padding: 30px;
+    border: 1px solid #ddd;
+  }
+#register_photo_form ul li {
+    margin-bottom: 20px;
+  }
+.photo-preview-wrap {
+    text-align: center;
+  }
+.photo-preview-wrap img {
+    border-radius: 12px;
+    box-shadow: 0 0 8px rgba(0,0,0,0.1);
+  }
+.inline-input-group {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+.inline-input-group input[type="text"] {
+    flex: 1;
+    min-width: 200px;
+  }
+input[type="text"],
+input[type="file"],
+input[type="button"],
+input[type="submit"],
+button {
+    padding: 10px 12px;
+    font-size: 14px;
+    border-radius: 4px;
+  }
+input[type="button"],
+input[type="submit"],
+button {
+    background-color: #000;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+  }
+input[type="button"]:hover,
+input[type="submit"]:hover,
+button:hover {
+    background-color: #111;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+    transform: translateY(-1px);
+  }
+#file-name {
+    font-size: 13px;
+    margin-left: 10px;
+    color: #555;
+  }
+.form-notice {
+    text-align: center;
+    font-size: 14px;
+    color: red;
+  }
+.align-center {
+    text-align: center;
+    margin-top: 30px;
+  }
+.my-photo {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  object-fit: cover; 
+  display: block;
+  margin: 0 auto;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+#preview-image {
+  width: 160px !important;
+  height: 160px !important;
+  border-radius: 50% !important;
+  object-fit: cover !important;
+}
+#custom-file-btn {
+  font-size: 13px;            /* 글자 크기 */
+  padding: 6px 12px;          /* 안쪽 여백 */
+  border-radius: 4px;
+  height: 34px;               /* 버튼 높이 */
+  min-width: auto;            /* 최소 너비 제거 */
+  background-color: #000;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#custom-file-btn:hover {
+  background-color: #333;
+}
+
+input[type="button"].secondary-btn {
+  background-color: #fff;
+  color: #000;
+  border: 1.5px solid #000;
+  padding: 10px 20px;
+  font-size: 15px;
+  font-weight: bold;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+input[type="button"].secondary-btn:hover {
+  background-color: #f3f3f3;
+  border-color: #333;
+}
+
+
+/*======== 로그인 페이지 스타일 ========*/
+
+#login-content-main {
+  margin-top: 160px; /* 헤더와 겹치지 않게 */
+}
+
+#login-title {
+  font-size: 28px;
+  font-weight: bold;
+  color: #111;
+  text-align: center;
+  margin-bottom: 70px;
+  border-bottom: 2px solid #000;
+  padding-bottom: 10px;
+  letter-spacing: 1px;
+}
+
+#login_form {
+  width: 400px;
+  margin: 0 auto;
+  padding: 40px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+  margin-bottom: 100px;
+}
+
+#login_form ul {
+  padding: 0;
+  list-style: none;
+}
+
+#login_form .floating-label {
+  position: relative;
+  margin-bottom: 30px;
+}
+
+#login_form .form-input {
+  width: 100%;
+  height: 48px;
+  padding: 1rem 0.75rem 0.25rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  background-color: #fff;
+  transition: border-color 0.3s ease;
+}
+
+#login_form .form-input:focus {
+  border-color: #000;
+  outline: none;
+}
+
+#login_form .floating-label > label {
+  position: absolute;
+  top: 14px;
+  left: 12px;
+  font-size: 16px;
+  color: #888;
+  transition: all 0.25s ease;
+  pointer-events: none;
+  background-color: white;
+  padding: 0 4px;
+}
+
+#login_form .form-input:focus + label,
+#login_form .form-input:not(:placeholder-shown) + label {
+  font-size: 13px;
+  color: #000;
+  top: -7px;
+  left: 10px;
+}
+
+#login-register-link {
+  text-align: center;
+  margin-top: 25px;
+  font-size: 14px;
+  color: #444;
+}
+
+#login-register-link a {
+  color: #000;
+  font-weight: bold;
+  text-decoration: underline;
+  transition: color 0.3s ease;
+}
+
+#login-register-link a:hover {
+  color: #555;
+}
+
+#login-button-group {
+  text-align: center;
+  margin-top: 30px;
+}
+
+#login-button-group input[type="submit"],
+#login-button-group input[type="button"] {
+  background-color: #000;
+  color: #fff;
+  border: none;
+  padding: 12px 24px;
+  font-size: 15px;
+  font-weight: bold;
+  border-radius: 4px;
+  cursor: pointer;
+  margin: 6px;
+  transition: background-color 0.3s ease;
+}
+
+#login-button-group input[type="submit"]:hover,
+#login-button-group input[type="button"]:hover {
+  background-color: #333;
+}
+
+#login_form .form-input::placeholder {
+  color: transparent; /* placeholder 글자 숨김 */
+}
+
+#login_form .form-input:focus + label,
+#login_form .form-input:not(:placeholder-shown) + label {
+  font-size: 13px;
+  color: #000;
+  top: -7px;
+  left: 10px;
+}
+
+#register_form .align-center input[type="submit"] {
+  padding: 16px 32px;       /* 위아래 16px, 좌우 32px로 키움 */
+  font-size: 18px;          /* 글자 크기도 키움 */
+  width: 100%;              /* 폼 너비 전체로 확장하고 싶다면 */
+  max-width: 320px;         /* 또는 최대 너비 제한 */
+  border-radius: 6px;
+}
+.address-input-group {
+    width: 100%;
+    display: flex;
+    gap: 8px;
+}
+
+

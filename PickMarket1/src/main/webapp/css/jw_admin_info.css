@@ -1,0 +1,231 @@
+/* 전체 페이지 레이아웃 */
+.page-main {
+  padding: 40px 80px;
+  background-color: #fff;
+  font-family: 'Pretendard', sans-serif;
+}
+
+/* 제목 */
+.content-main h2 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 30px;
+  border-bottom: 2px solid #000;
+  padding-bottom: 10px;
+  letter-spacing: 1px;
+}
+
+/* 검색 폼 */
+ul.search {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  margin-bottom: 30px;
+  padding-left: 0;
+  list-style: none;
+}
+
+ul.search li select,
+ul.search li input[type="search"] {
+  padding: 8px 10px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+ul.search li input[type="submit"] {
+  padding: 9px 16px;
+  font-size: 14px;
+  font-weight: bold;
+  color: #fff;
+  background-color: #000;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+ul.search li input[type="button"] {
+  padding: 9px 16px;
+  font-size: 14px;
+  font-weight: bold;
+  color: #fff;
+  background-color: #000;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+ul.search li input[type="button"]:hover {
+  background-color: #333;
+}
+ul.search li input[type="submit"]:hover {
+  background-color: #333;
+}
+
+/* 테이블 스타일 */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 15px;
+}
+
+table tr:first-child {
+  background-color: #f5f5f5;
+  font-weight: bold;
+  border-top: 2px solid #000;
+  border-bottom: 1px solid #000;
+}
+
+/* 상세 정보 박스 */
+.user-detail-box {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 20px;
+  margin-top: 20px;
+  background-color: #fafafa;
+}
+
+/* 상세 정보 테이블 */
+.user-detail-box table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 15px;
+}
+
+.user-detail-box td {
+  padding: 12px 8px;
+  text-align: left;
+  vertical-align: middle;
+  border-bottom: 1px solid #000;
+}
+.user-detail-box th {
+  padding: 12px 8px;
+  text-align: center;
+  vertical-align: middle;
+  border-bottom: 1px solid #000;
+}
+
+.user-detail-box th {
+  width: 120px;
+  background-color: #f0f0f0;
+  font-weight: 600;
+}
+
+/* 버튼 영역 */
+.btn-box {
+  margin-top: 30px;
+}
+
+.btn-box input[type="button"] {
+  padding: 10px 20px;
+  margin: 0 4px;
+  background-color: #000;
+  color: #fff;
+  font-weight: bold;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.btn-box input[type="button"]:hover {
+  background-color: #333;
+}
+
+table tr {
+  border-bottom: 1px solid #000;
+}
+
+table td {
+  text-align: center;
+  padding: 12px 8px;
+}
+
+/* 아이디 링크 */
+table td a {
+  color: #0073e6;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+table td a:hover {
+  text-decoration: underline;
+}
+
+/* 페이지네이션 */
+.align-center {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 14px;
+}
+
+.result-display {
+  padding: 30px;
+  text-align: center;
+  font-size: 16px;
+  color: #666;
+  border: 1px solid #ddd;
+  background-color: #fafafa;
+  border-radius: 6px;
+}
+/* 공지사항 등록 폼 스타일 */
+#admin-edit form {
+  max-width: 600px;
+  margin: 40px auto; /* 상단 여백 및 가운데 정렬 */
+  padding: 30px;
+  border: 1px solid #000;
+  border-radius: 6px;
+  background-color: #fff;
+}
+
+/* 리스트 항목 정렬 */
+#admin-edit form ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#admin-edit form li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+#admin-edit form label {
+  width: 80px; /* label 너비 고정 */
+  font-weight: bold;
+}
+
+#admin-edit form input[type="text"],
+#admin-edit form textarea {
+  flex: 1;
+  padding: 10px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+}
+
+/* 버튼 박스 */
+.btn-box {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.btn-box .simple-button {
+  padding: 10px 20px;
+  margin: 0 5px;
+  background-color: #000;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn-box .simple-button:hover {
+  background-color: #333;
+}
+

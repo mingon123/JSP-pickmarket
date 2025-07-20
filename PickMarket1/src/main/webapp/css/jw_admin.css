@@ -1,0 +1,432 @@
+/* 전체 페이지 레이아웃 */
+.page-main {
+  padding: 40px 80px;
+  background-color: #fff;
+  font-family: 'Pretendard', sans-serif;
+}
+
+/* 제목 */
+.content-main h2 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 30px;
+  border-bottom: 2px solid #000;
+  padding-bottom: 10px;
+  letter-spacing: 1px;
+}
+
+/* 검색 폼 */
+ul.search {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  margin-bottom: 30px;
+  padding-left: 0;
+  list-style: none;
+}
+
+ul.search li select,
+ul.search li input[type="search"] {
+  padding: 8px 10px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+ul.search li input[type="submit"] {
+  padding: 9px 16px;
+  font-size: 14px;
+  font-weight: bold;
+  color: #fff;
+  background-color: #000;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+ul.search li input[type="button"] {
+  padding: 9px 16px;
+  font-size: 14px;
+  font-weight: bold;
+  color: #fff;
+  background-color: #000;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+ul.search li input[type="button"]:hover {
+  background-color: #333;
+}
+ul.search li input[type="submit"]:hover {
+  background-color: #333;
+}
+
+/* 버튼 묶음 */
+.list-space {
+  margin-bottom: 20px;
+  text-align: right;
+}
+
+.list-space input[type="button"] {
+  padding: 8px 16px;
+  margin-left: 6px;
+  background-color: #000;
+  color: #fff;
+  font-size: 14px;
+  font-weight: bold;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.list-space input[type="button"]:hover {
+  background-color: #333;
+}
+
+/* 테이블 스타일 */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 15px;
+}
+
+table tr:first-child {
+  background-color: #f5f5f5;
+  font-weight: bold;
+  border-top: 2px solid #000;
+  border-bottom: 1px solid #000;
+}
+
+/* 상세 정보 박스 */
+.user-detail-box {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 20px;
+  margin-top: 20px;
+  background-color: #fafafa;
+}
+
+/* 상세 정보 테이블 */
+.user-detail-box table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 15px;
+}
+
+.user-detail-box td {
+  padding: 12px 8px;
+  text-align: left;
+  vertical-align: middle;
+  border-bottom: 1px solid #000;
+}
+.user-detail-box th {
+  padding: 12px 8px;
+  text-align: center;
+  vertical-align: middle;
+  border-bottom: 1px solid #000;
+}
+
+.user-detail-box th {
+  width: 120px;
+  background-color: #f0f0f0;
+  font-weight: 600;
+}
+
+/* 사진 없을 때 텍스트 */
+.no-photo {
+  font-size: 14px;
+  color: #999;
+}
+
+/* 버튼 영역 */
+.btn-box {
+  margin-top: 30px;
+}
+
+.btn-box input[type="button"] {
+  padding: 10px 20px;
+  margin: 0 4px;
+  background-color: #000;
+  color: #fff;
+  font-weight: bold;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.btn-box input[type="button"]:hover {
+  background-color: #333;
+}
+
+table tr {
+  border-bottom: 1px solid #000;
+}
+
+table td {
+  text-align: center;
+  padding: 12px 8px;
+}
+
+/* 아이디 링크 */
+table td a {
+  color: #0073e6;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+table td a:hover {
+  text-decoration: underline;
+}
+
+/* 페이지네이션 */
+.align-center {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 14px;
+}
+
+.result-display {
+  padding: 30px;
+  text-align: center;
+  font-size: 16px;
+  color: #666;
+  border: 1px solid #ddd;
+  background-color: #fafafa;
+  border-radius: 6px;
+}
+
+/*수정폼*/
+#admin-edit .simple-button {
+  all: unset; /* 기본 스타일 제거 (선택적으로) */
+  padding: 10px 16px;
+  background-color: #000;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#admin-edit #nickname_check.simple-button {
+  padding: 6px 10px;
+  font-size: 13px;
+  margin-left: 6px;
+}
+
+#admin-edit #id_check.simple-button {
+  padding: 6px 10px;
+  font-size: 13px;
+  margin-left: 6px;
+}
+
+#admin-edit .address-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* 주소 input 너비 조정 */
+#admin-edit .address-row input[type="text"] {
+  width: 61%;
+}
+
+/* 현재 위치 버튼 소형화 */
+#admin-edit .location-btn {
+  padding: 6px 10px;
+  font-size: 13px;
+  white-space: nowrap;
+}
+
+/* 신고 상세 정보 테이블 */
+.report-detail-box {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 20px;
+  margin-top: 20px;
+  background-color: #fafafa;
+}
+
+.report-detail-box table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 15px;
+}
+
+.report-detail-box th {
+  width: 120px;
+  padding: 12px 8px;
+  text-align: center;
+  vertical-align: middle;
+  background-color: #f0f0f0;
+  border-bottom: 1px solid #000;
+  font-weight: 600;
+}
+
+.report-detail-box td {
+  padding: 12px 8px;
+  text-align: left;
+  vertical-align: middle;
+  border-bottom: 1px solid #000;
+}
+
+/* 버튼 영역 */
+.report-detail-box + .btn-box {
+  margin-top: 30px;
+  text-align: center;
+}
+
+.report-detail-box + .btn-box input[type="button"] {
+  padding: 10px 20px;
+  margin: 0 4px;
+  background-color: #000;
+  color: #fff;
+  font-weight: bold;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.report-detail-box + .btn-box input[type="button"]:hover {
+  background-color: #333;
+}
+
+/* 신고 상세 정보 박스 */
+.report-detail-box {
+  width: 600px; /* 줄인 너비 */
+  margin: 0 auto;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 20px;
+  background-color: #fafafa;
+}
+
+/* 신고 상세 테이블 */
+.report-detail-box table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 15px;
+}
+
+.report-detail-box th,
+.report-detail-box td {
+  padding: 12px 8px;
+  text-align: center; /* 가운데 정렬 */
+  vertical-align: middle;
+  border-bottom: 1px solid #000;
+}
+
+.report-detail-box th {
+  width: 120px;
+  background-color: #f0f0f0;
+  font-weight: 600;
+}
+/* block-detail-box 공통 스타일 */
+.block-detail-box {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 20px;
+  margin-top: 20px;
+  background-color: #fafafa;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* 테이블 기본 스타일 */
+.block-detail-box table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 15px;
+  text-align: center;
+}
+
+.block-detail-box th,
+.block-detail-box td {
+  padding: 12px 10px;
+  border-bottom: 1px solid #000;
+  vertical-align: middle;
+}
+
+.block-detail-box th {
+  width: 150px;
+  background-color: #f0f0f0;
+  font-weight: bold;
+}
+
+/* 버튼 스타일 */
+.btn-box input[type="button"] {
+  padding: 10px 20px;
+  margin: 0 6px;
+  background-color: #000;
+  color: #fff;
+  font-weight: bold;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.btn-box input[type="button"]:hover {
+  background-color: #333;
+}
+
+/* 운영정책 수정용 input/textarea 라인 정렬 */
+#admin-edit form#modify_form ul {
+  list-style: none;
+  padding: 0;
+}
+
+#admin-edit form#modify_form ul li {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+/* label은 위, 입력창은 아래 정렬 */
+#admin-edit form#modify_form label {
+  font-weight: 600;
+  margin-bottom: 8px;
+  font-size: 15px;
+}
+
+/* input, textarea 공통 스타일 */
+#admin-edit form#modify_form input[type="text"],
+#admin-edit form#modify_form textarea {
+  padding: 10px 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+  resize: vertical;
+  width: 100%;
+  box-sizing: border-box;
+  background-color: #fff;
+}
+
+/* 버튼 박스 정렬 */
+#admin-edit .btn-box {
+  margin-top: 30px;
+  text-align: center;
+}
+
+#admin-edit .btn-box input.simple-button {
+  padding: 10px 20px;
+  margin: 0 6px;
+  background-color: #000;
+  color: #fff;
+  font-weight: bold;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#admin-edit .btn-box input.simple-button:hover {
+  background-color: #333;
+}

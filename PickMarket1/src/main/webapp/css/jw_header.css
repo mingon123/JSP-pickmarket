@@ -1,0 +1,148 @@
+/* nav 안의 ul.nav 내부 간격 조정 */
+.nav {
+  display: flex;
+  align-items: center;
+  gap: 12px; /* 기존보다 좁게 */
+  font-size: 15px;
+}
+
+/* 프로필 사진 간격 줄이기 */
+.menu-profile img.my-photo {
+  width: 22px;
+  height: 22px;
+  margin-right: 4px;
+  vertical-align: middle;
+}
+
+/* 알림 아이콘 크기와 위치 보정 */
+.my-alarm {
+  width: 22px;
+  height: 22px;
+  vertical-align: middle;
+  cursor: pointer;
+}
+
+/* 알림 뱃지 위치도 줄이기 */
+.alarm-badge {
+  font-size: 10px;
+  top: -3px;
+  right: -3px;
+  padding: 1px 4px;
+}
+
+/* 로그아웃 / 닉네임 줄 정렬 */
+.menu-logout {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 14px;
+}
+
+/* 메뉴 줄 전체 좌우 폭 제한 */
+.main-nav .nav {
+  padding-left: 0;
+  padding-right: 0;
+}
+.menu-user {
+  display: flex;
+  align-items: center;
+  gap: 6px; /* 이미지와 닉네임 간 간격 */
+  font-size: 14px;
+}
+
+.menu-user .my-photo {
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  vertical-align: middle;
+}
+.menu-user {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  min-width: 160px; /* 공간 확보용 */
+  padding: 0 10px;
+}
+
+.my-photo {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+}
+
+.nickname-box {
+  flex: 1;
+  min-width: 80px;
+  max-width: 120px;
+  display: flex;
+  justify-content: center; /* 닉네임 가운데 정렬 */
+  align-items: center;
+  overflow: hidden;
+}
+
+.nickname {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.logout-link {
+  font-size: 13px;
+  margin-left: auto;
+  color: #000;
+}
+.menu-profile, .menu-logout, .menu-alarm {
+  margin-left: 12px;
+  display: flex;
+  align-items: center;
+}
+
+.menu-profile img {
+  margin-right: 6px;
+  border-radius: 50%;
+}
+
+.menu-logout span {
+  font-weight: bold;
+  margin-right: 4px;
+}
+
+/*수정안*/
+
+.menu-profile,
+.menu-logout {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.menu-profile img {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.menu-logout span {
+  display: inline-block;
+  max-width: 80px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-weight: 500;
+  color: #333;
+}
+
+.menu-logout a {
+  margin-left: 6px;
+  font-size: 14px;
+  color: #000;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.menu-logout a:hover {
+  text-decoration: underline;
+}
